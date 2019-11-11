@@ -2,27 +2,23 @@ import React, { useContext } from 'react';
 
 import { MovieContext } from '../../MovieContext';
 
-import './styles.css';
+import { Container, Title, Content } from './styles';
 
 import { Movie } from './components';
 
 function MoviesList() {
   const [movies, setMovies] = useContext(MovieContext);
 
-  function handleAddMovie() {
-    const movie = { id: Math.random(), title: 'Batman - The dark knight', price: 50 };
-  }
-
   return (
-    <div className="container">
-      <p className="title">Movies</p>
+    <Container>
+      <Title>Movies</Title>
 
-      <div className="content">
+      <Content>
         {movies.map(movie => (
           <Movie key={movie.id} data={movie} />
         ))}
-      </div>
-    </div>
+      </Content>
+    </Container>
   );
 }
 
