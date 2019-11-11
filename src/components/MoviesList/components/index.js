@@ -1,3 +1,4 @@
+import AddMovie from './AddMovie';
 import Movie from './Movie';
 
-export { Movie };
+export { AddMovie, Movie };

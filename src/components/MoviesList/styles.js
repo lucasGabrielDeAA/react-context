@@ -22,7 +22,12 @@ export const Content = styled.div`
   display: flex;
   flex-direction: column;
   height: 600px;
-  overflow: auto;
   padding-top: 12px;
   width: 700px;
+`;
+
+export const List = styled.div`
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
 `;
