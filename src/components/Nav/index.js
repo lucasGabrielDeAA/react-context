@@ -8,8 +8,10 @@ function Nav() {
   const [movies, setMovies] = useContext(MovieContext);
   return (
     <nav className="nav">
-      <p>Technus's movies list</p>
-      <p>{`Total (${movies.length})`}</p>
+      <div>
+        <p>Technus's movies list</p>
+        <p>{`Total (${movies.length})`}</p>
+      </div>
     </nav>
   )
 }
