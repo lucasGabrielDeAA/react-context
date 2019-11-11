@@ -1,11 +1,12 @@
 import React from 'react';
 
-function Movie({ data }) {
+import './styles.css';
 
+function Movie({ data }) {
   return (
-    <div>
-      <h2>{data.title}</h2>
-      <p>{`R$ ${data.price}`}</p>
+    <div className="movie">
+      <p className="title">{data.title}</p>
+      <p className="price">{`R$ ${data.price}`}</p>
     </div>
   )
 }
