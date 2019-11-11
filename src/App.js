@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 
-import { MoviesList, Nav } from './components';
+import { AddMovie, MoviesList, Nav } from './components';
 import { MovieProvider } from './MovieContext';
 
 function App() {
@@ -11,6 +11,8 @@ function App() {
 
       <div className="App">
         <MoviesList />
+
+        <AddMovie />
       </div>
     </MovieProvider>
   );
