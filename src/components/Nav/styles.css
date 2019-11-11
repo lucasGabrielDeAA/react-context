@@ -1,0 +1,12 @@
+.nav {
+    align-items: center;
+    background: #babaca;
+    display: flex;
+    flex-direction: row;
+    height: 80px;
+    justify-content: space-between;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
