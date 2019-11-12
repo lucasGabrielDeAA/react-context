@@ -13,7 +13,7 @@ function AddMovie() {
     e.preventDefault();
 
     if (title !== '' && price !== '') {
-      setMovies(prevMovies => [...prevMovies, { id: Math.random(), title, price }]);
+      setMovies({ id: Math.random(), title, price });
     }
   }
 
