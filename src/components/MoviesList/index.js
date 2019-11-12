@@ -14,13 +14,13 @@ function MoviesList() {
       <Title>Movies</Title>
 
       <Content>
+        <AddMovie />
+
         <List>
           {movies.map(movie => (
             <Movie key={movie.id} data={movie} />
           ))}
         </List>
-
-        <AddMovie />
       </Content>
     </Container>
   );
